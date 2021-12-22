@@ -2,7 +2,7 @@
 
 	<arg name="project" default="lio_sam"/>
 
-    <param name="robot_description" command="$(find xacro)/xacro $(find vehicle_model)/xacro/sd_env200.urdf.xacro --inorder" />
+    <param name="robot_description" command="$(find xacro)/xacro $(find vehicle_model)/urdf/sd_env200.urdf.xacro --inorder" />
 
     <node name="robot_state_publisher" pkg="robot_state_publisher" type="robot_state_publisher" respawn="true" />
   
